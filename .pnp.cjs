@@ -31,11 +31,13 @@ const RAW_RUNTIME_STATE =
           ["@testing-library/react", "virtual:59748afb8252c7cab955960c05fc5cc02f906afa82ac13a8ba21edb69497de2690fe21196fafd128411433105120f19d1aefd5f00f00a7667398b7d94a9a78a0#npm:13.4.0"],\
           ["@testing-library/user-event", "virtual:59748afb8252c7cab955960c05fc5cc02f906afa82ac13a8ba21edb69497de2690fe21196fafd128411433105120f19d1aefd5f00f00a7667398b7d94a9a78a0#npm:13.5.0"],\
           ["autoprefixer", "virtual:59748afb8252c7cab955960c05fc5cc02f906afa82ac13a8ba21edb69497de2690fe21196fafd128411433105120f19d1aefd5f00f00a7667398b7d94a9a78a0#npm:10.4.20"],\
+          ["axios", "npm:1.7.9"],\
           ["dom", "npm:0.0.3"],\
           ["eslint", "npm:8.0.0"],\
           ["eslint-config-react-app", "virtual:59748afb8252c7cab955960c05fc5cc02f906afa82ac13a8ba21edb69497de2690fe21196fafd128411433105120f19d1aefd5f00f00a7667398b7d94a9a78a0#npm:7.0.1"],\
           ["postcss", "npm:8.4.49"],\
           ["react", "npm:18.0.0"],\
+          ["react-audio-player", "virtual:59748afb8252c7cab955960c05fc5cc02f906afa82ac13a8ba21edb69497de2690fe21196fafd128411433105120f19d1aefd5f00f00a7667398b7d94a9a78a0#npm:0.17.0"],\
           ["react-dom", "virtual:59748afb8252c7cab955960c05fc5cc02f906afa82ac13a8ba21edb69497de2690fe21196fafd128411433105120f19d1aefd5f00f00a7667398b7d94a9a78a0#npm:18.0.0"],\
           ["react-icons", "virtual:59748afb8252c7cab955960c05fc5cc02f906afa82ac13a8ba21edb69497de2690fe21196fafd128411433105120f19d1aefd5f00f00a7667398b7d94a9a78a0#npm:5.4.0"],\
           ["react-router", "virtual:59748afb8252c7cab955960c05fc5cc02f906afa82ac13a8ba21edb69497de2690fe21196fafd128411433105120f19d1aefd5f00f00a7667398b7d94a9a78a0#npm:7.0.2"],\
@@ -6045,6 +6047,18 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["axios", [\
+      ["npm:1.7.9", {\
+        "packageLocation": "../../AppData/Local/Yarn/Berry/cache/axios-npm-1.7.9-3c98466f87-10c0.zip/node_modules/axios/",\
+        "packageDependencies": [\
+          ["axios", "npm:1.7.9"],\
+          ["follow-redirects", "virtual:3c98466f874305529f1a16589101c28705aa489e7ec8ffcbfb5cc062090761c951973322264d8039ff40de705a591171bac1067843c49b197410972b4a9ed9f4#npm:1.15.9"],\
+          ["form-data", "npm:4.0.1"],\
+          ["proxy-from-env", "npm:1.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["axobject-query", [\
       ["npm:4.1.0", {\
         "packageLocation": "../../AppData/Local/Yarn/Berry/cache/axobject-query-npm-4.1.0-9703554323-10c0.zip/node_modules/axobject-query/",\
@@ -9384,10 +9398,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:a313c479c5c7e54d9ec8fbeeea69ff640f56b8989ea2dff42351a3fa5c4061fb80a52d8ede0f0826a181a216820c2d2c3f15da881e7fdf31cef1c446e42f0c45#npm:1.15.9", {\
-        "packageLocation": "./.yarn/__virtual__/follow-redirects-virtual-eef30d12cf/3/AppData/Local/Yarn/Berry/cache/follow-redirects-npm-1.15.9-539785d34c-10c0.zip/node_modules/follow-redirects/",\
+      ["virtual:3c98466f874305529f1a16589101c28705aa489e7ec8ffcbfb5cc062090761c951973322264d8039ff40de705a591171bac1067843c49b197410972b4a9ed9f4#npm:1.15.9", {\
+        "packageLocation": "./.yarn/__virtual__/follow-redirects-virtual-e8bf3836d7/3/AppData/Local/Yarn/Berry/cache/follow-redirects-npm-1.15.9-539785d34c-10c0.zip/node_modules/follow-redirects/",\
         "packageDependencies": [\
-          ["follow-redirects", "virtual:a313c479c5c7e54d9ec8fbeeea69ff640f56b8989ea2dff42351a3fa5c4061fb80a52d8ede0f0826a181a216820c2d2c3f15da881e7fdf31cef1c446e42f0c45#npm:1.15.9"],\
+          ["follow-redirects", "virtual:3c98466f874305529f1a16589101c28705aa489e7ec8ffcbfb5cc062090761c951973322264d8039ff40de705a591171bac1067843c49b197410972b4a9ed9f4#npm:1.15.9"],\
           ["@types/debug", null],\
           ["debug", null]\
         ],\
@@ -9471,6 +9485,16 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../AppData/Local/Yarn/Berry/cache/form-data-npm-3.0.2-d64e17a092-10c0.zip/node_modules/form-data/",\
         "packageDependencies": [\
           ["form-data", "npm:3.0.2"],\
+          ["asynckit", "npm:0.4.0"],\
+          ["combined-stream", "npm:1.0.8"],\
+          ["mime-types", "npm:2.1.35"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:4.0.1", {\
+        "packageLocation": "../../AppData/Local/Yarn/Berry/cache/form-data-npm-4.0.1-f1a27a1c2e-10c0.zip/node_modules/form-data/",\
+        "packageDependencies": [\
+          ["form-data", "npm:4.0.1"],\
           ["asynckit", "npm:0.4.0"],\
           ["combined-stream", "npm:1.0.8"],\
           ["mime-types", "npm:2.1.35"]\
@@ -10108,7 +10132,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["http-proxy", "npm:1.18.1"],\
           ["eventemitter3", "npm:4.0.7"],\
-          ["follow-redirects", "virtual:a313c479c5c7e54d9ec8fbeeea69ff640f56b8989ea2dff42351a3fa5c4061fb80a52d8ede0f0826a181a216820c2d2c3f15da881e7fdf31cef1c446e42f0c45#npm:1.15.9"],\
+          ["follow-redirects", "virtual:3c98466f874305529f1a16589101c28705aa489e7ec8ffcbfb5cc062090761c951973322264d8039ff40de705a591171bac1067843c49b197410972b4a9ed9f4#npm:1.15.9"],\
           ["requires-port", "npm:1.0.0"]\
         ],\
         "linkType": "HARD"\
@@ -15068,6 +15092,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["proxy-from-env", [\
+      ["npm:1.1.0", {\
+        "packageLocation": "../../AppData/Local/Yarn/Berry/cache/proxy-from-env-npm-1.1.0-c13d07f26b-10c0.zip/node_modules/proxy-from-env/",\
+        "packageDependencies": [\
+          ["proxy-from-env", "npm:1.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["psl", [\
       ["npm:1.15.0", {\
         "packageLocation": "../../AppData/Local/Yarn/Berry/cache/psl-npm-1.15.0-410584ca6b-10c0.zip/node_modules/psl/",\
@@ -15187,6 +15220,33 @@ const RAW_RUNTIME_STATE =
           ["raf", "npm:3.4.1"],\
           ["regenerator-runtime", "npm:0.13.11"],\
           ["whatwg-fetch", "npm:3.6.20"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["react-audio-player", [\
+      ["npm:0.17.0", {\
+        "packageLocation": "../../AppData/Local/Yarn/Berry/cache/react-audio-player-npm-0.17.0-e098631967-10c0.zip/node_modules/react-audio-player/",\
+        "packageDependencies": [\
+          ["react-audio-player", "npm:0.17.0"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:59748afb8252c7cab955960c05fc5cc02f906afa82ac13a8ba21edb69497de2690fe21196fafd128411433105120f19d1aefd5f00f00a7667398b7d94a9a78a0#npm:0.17.0", {\
+        "packageLocation": "./.yarn/__virtual__/react-audio-player-virtual-29082f3534/3/AppData/Local/Yarn/Berry/cache/react-audio-player-npm-0.17.0-e098631967-10c0.zip/node_modules/react-audio-player/",\
+        "packageDependencies": [\
+          ["react-audio-player", "virtual:59748afb8252c7cab955960c05fc5cc02f906afa82ac13a8ba21edb69497de2690fe21196fafd128411433105120f19d1aefd5f00f00a7667398b7d94a9a78a0#npm:0.17.0"],\
+          ["@types/react", null],\
+          ["@types/react-dom", null],\
+          ["prop-types", "npm:15.8.1"],\
+          ["react", "npm:18.0.0"],\
+          ["react-dom", "virtual:59748afb8252c7cab955960c05fc5cc02f906afa82ac13a8ba21edb69497de2690fe21196fafd128411433105120f19d1aefd5f00f00a7667398b7d94a9a78a0#npm:18.0.0"]\
+        ],\
+        "packagePeers": [\
+          "@types/react-dom",\
+          "@types/react",\
+          "react-dom",\
+          "react"\
         ],\
         "linkType": "HARD"\
       }]\
@@ -17199,11 +17259,13 @@ const RAW_RUNTIME_STATE =
           ["@testing-library/react", "virtual:59748afb8252c7cab955960c05fc5cc02f906afa82ac13a8ba21edb69497de2690fe21196fafd128411433105120f19d1aefd5f00f00a7667398b7d94a9a78a0#npm:13.4.0"],\
           ["@testing-library/user-event", "virtual:59748afb8252c7cab955960c05fc5cc02f906afa82ac13a8ba21edb69497de2690fe21196fafd128411433105120f19d1aefd5f00f00a7667398b7d94a9a78a0#npm:13.5.0"],\
           ["autoprefixer", "virtual:59748afb8252c7cab955960c05fc5cc02f906afa82ac13a8ba21edb69497de2690fe21196fafd128411433105120f19d1aefd5f00f00a7667398b7d94a9a78a0#npm:10.4.20"],\
+          ["axios", "npm:1.7.9"],\
           ["dom", "npm:0.0.3"],\
           ["eslint", "npm:8.0.0"],\
           ["eslint-config-react-app", "virtual:59748afb8252c7cab955960c05fc5cc02f906afa82ac13a8ba21edb69497de2690fe21196fafd128411433105120f19d1aefd5f00f00a7667398b7d94a9a78a0#npm:7.0.1"],\
           ["postcss", "npm:8.4.49"],\
           ["react", "npm:18.0.0"],\
+          ["react-audio-player", "virtual:59748afb8252c7cab955960c05fc5cc02f906afa82ac13a8ba21edb69497de2690fe21196fafd128411433105120f19d1aefd5f00f00a7667398b7d94a9a78a0#npm:0.17.0"],\
           ["react-dom", "virtual:59748afb8252c7cab955960c05fc5cc02f906afa82ac13a8ba21edb69497de2690fe21196fafd128411433105120f19d1aefd5f00f00a7667398b7d94a9a78a0#npm:18.0.0"],\
           ["react-icons", "virtual:59748afb8252c7cab955960c05fc5cc02f906afa82ac13a8ba21edb69497de2690fe21196fafd128411433105120f19d1aefd5f00f00a7667398b7d94a9a78a0#npm:5.4.0"],\
           ["react-router", "virtual:59748afb8252c7cab955960c05fc5cc02f906afa82ac13a8ba21edb69497de2690fe21196fafd128411433105120f19d1aefd5f00f00a7667398b7d94a9a78a0#npm:7.0.2"],\

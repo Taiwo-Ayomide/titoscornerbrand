@@ -1,43 +1,86 @@
-// src/Navbar.js
 import React, { useState } from 'react';
 
+// Navbar component
 const Navbar = () => {
-    const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-    const toggleMenu = () => {
-        setIsOpen(!isOpen);
-    };
+  // Toggle menu for mobile
+  const toggleMenu = () => setIsOpen((prevState) => !prevState);
 
-    return (
-        <nav className="p-4" id='back'>
-            <div className="max-w-7xl mx-auto flex justify-between items-center">
-                {/* Logo */}
-                <div className="text-white font-bold text-lg">
-                    TITO
-                </div>
-
-                {/* Hamburger Icon */}
-                <div className="lg:hidden">
-                    <button onClick={toggleMenu} className="text-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                        </svg>
-                    </button>
-                </div>
-
-                {/* Navbar Links */}
-                <div className={`lg:flex lg:items-center space-x-4 ${isOpen ? 'block' : 'hidden'}`}>
-                    <a href="/" className="text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-blue-500">Home</a>
-                    <a href="/blog" className="text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-blue-500">BLOG</a>
-                    <a href="/recipe" className="text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-blue-500">RECIPES</a>
-                    <a href="/audio" className="text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-blue-500">PODCASTS</a>
-                    <a href="/books" className="text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-blue-500">EBOOKS</a>
-                    <a href="/gallery" className="text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-blue-500">GALLERY</a>
-                    <a href="/login" className="text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-blue-500">LOGIN</a>
-                </div>
-            </div>
-        </nav>
-    );
+  return (
+    <nav className="bg-white border-gray-200" id='back'>
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="logo.png" className="h-8" alt="Titoscorner Logo" />
+          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Titoscorner</span>
+        </a>
+        <button
+          type="button"
+          onClick={toggleMenu} // Toggle menu on click
+          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default"
+          aria-expanded={isOpen ? 'true' : 'false'}
+        >
+          <span className="sr-only">Open main menu</span>
+          <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        {/* Update className to conditionally show the menu when isOpen is true */}
+        <div className={`w-full md:block md:w-auto ${isOpen ? 'block' : 'hidden'}`} id="navbar-default">
+          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:border-gray-700">
+            <li>
+              <a
+                href="/"
+                className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                aria-current="page"
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="/blog"
+                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              >
+                Blog
+              </a>
+            </li>
+            <li>
+              <a
+                href="/recipe"
+                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              >
+                Recipe
+              </a>
+            </li>
+            <li>
+              <a
+                href="/audio"
+                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              >
+                Podcast
+              </a>
+            </li>
+            <li>
+              <a
+                href="/books"
+                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              >
+                E-Books
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  );
 };
 
 export default Navbar;
