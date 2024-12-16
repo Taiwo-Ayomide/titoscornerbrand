@@ -13,7 +13,7 @@ const ReadMore = ({ children }) => {
             {isReadMore ? `${text.slice(0, 100)}...` : text}
             <span
                 onClick={toggleReadMore}
-                className="text-green-500 cursor-pointer"
+                className="text-yellow-500 cursor-pointer"
             >
                 {isReadMore ? " read more" : " show less"}
             </span>
@@ -112,9 +112,9 @@ const Food = () => {
                                                 }
                                             </ul>
                                         </div>
-                                        <div className="mt-8">
+                                        <div className="mt-8 text-white">
                                             <h1 className="uppercase font-bold text-white">Steps</h1>
-                                            <ReadMore className="mt-2 text-sm leading-6 text-justify text-yellow-500">
+                                            <ReadMore className="mt-2 text-sm leading-6 text-justify">
                                                 {recipe.steps}
                                             </ReadMore>
                                         </div>
