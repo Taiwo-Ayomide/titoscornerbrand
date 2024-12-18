@@ -8,7 +8,7 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen((prevState) => !prevState);
 
   return (
-    <nav className="bg-white border-gray-200" id='back'>
+    <nav className="bg-white border-gray-200" id='newback'>
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img src="logo.png" className="h-8" alt="Titoscorner Logo" />
@@ -38,7 +38,7 @@ const Navbar = () => {
             <li>
               <a
                 href="/"
-                className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent  md:p-0 dark:text-white"
                 aria-current="page"
               >
                 Home

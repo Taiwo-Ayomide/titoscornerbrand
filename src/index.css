@@ -5,19 +5,115 @@
 body {
     background-image: url('abstract.avif');
 }
+
+/* About.css */
 .image {
-    background-image: url('bolu.png');
+    background-image: url('newback.jpg'), url('room.avif');
     width: 100%;
     height: 51rem;
     background-size: contain;
     background-repeat: no-repeat;
-}
+    overflow: hidden;
+    object-fit: cover;
+    filter: brightness(90%);
+    background-blend-mode: multiply;
+    mix-blend-mode: multiply;
+  }
+  
+  .about-container {
+    position: relative;
+  }
+  
+  .text-container {
+    position: absolute;
+    top: 18rem; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .content {
+    margin-left: 4rem;
+    margin-top: -15rem;
+  }
+  
+  .heading {
+    /* font-family: 'serif'; */
+    font-family: 'Tw Cen MT';
+    font-size: 4vw; /* Responsive text size */
+    color: white;
+    text-align: center;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+  }
+  
+  .description {
+    /* font-family: 'Arial', Helvetica, sans-serif; */
+    font-family: 'Bahnschrift';
+    font-size: 3vw; /* Responsive font size */
+    color: white;
+    padding-top: -2rem;
+    width: 80%;
+    line-height: 1.75;
+    text-align: center;
+  }
+  
+  /* Larger screens */
+  @media (min-width: 768px) {
+    .heading {
+      font-size: 3rem; /* Fixed size for medium screens */
+    }
+  
+    .description {
+      font-size: 1.5rem;
+    }
 
+    .content {
+        margin-left: 24rem;
+        margin-top: -10rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .heading {
+      font-size: 4rem; /* Fixed size for larger screens */
+    }
+  
+    .description {
+      font-size: 1.75rem;
+    }
+    .content {
+        margin-left: 24rem;
+        margin-top: -10rem;
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .heading {
+      font-size: 5rem; /* Extra large screens */
+    }
+  
+    .description {
+      font-size: 2rem;
+    }
+    .content {
+        margin-left: 24rem;
+        margin-top: -10rem;
+    }
+}
+  
+  
 #back {
-    background-color: #311996;
+    background-color: rgb(144, 3, 3);
+}
+#newback {
+    background: rgb(144, 3, 3);
+    /* z-index: 50; */
+    /* position: fixed; */
 }
 #color {
-    color: #311996;
+    color: blue;
 }
 
 @media only screen and (max-width: 600px) {
@@ -40,13 +136,17 @@ body {
 
 @media only screen and (min-width: 992px) {
     .image {
-        height: 45rem;
+        height: 43rem;
     }
 }
 
 @media only screen and (min-width: 1200px) {
     .image {
         width: 100%;
-        height: 51rem;
+        height: 54rem;
+        /* transform: scale(1.2); */
     }
+}
+#height {
+  font-family: Arial, Helvetica, sans-serif;
 }

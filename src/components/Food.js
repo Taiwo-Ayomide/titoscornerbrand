@@ -92,7 +92,7 @@ const Food = () => {
                                             className="w-full h-96 object-cover rounded-lg"
                                             style={{ width: '32rem', height: '32rem' }}
                                         />
-                                        <h3 className="mt-3 text-lg font-bold uppercase text-white leading-6 text-gray-900 hover:text-gray-600">
+                                        <h3 className="mt-3 text-lg font-bold uppercase text-white leading-6 hover:text-gray-600">
                                             {recipe.name}
                                         </h3>
                                         <p className="mt-5 text-sm leading-6 text-yellow-500 text-justify">
